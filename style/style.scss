@@ -232,6 +232,12 @@ section {
     }
 }
 
+@media (max-width: $mobile) { 
+    .story-2 {
+        background-color: $elementcolor2;
+    }
+}
+
 .story-3 {
     .story-text-3 {
         right: $right-move;
@@ -256,6 +262,13 @@ section {
             bottom: none;
 		    right: $right-move / 4;
         }
+    }
+}
+
+
+@media (max-width: $mobile) { 
+    .story-4 {
+        background-color: $elementcolor1;
     }
 }
 

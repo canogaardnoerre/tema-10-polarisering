@@ -152,6 +152,10 @@ section {
     bottom: none;
     right: 6.25vw; } }
 
+@media (max-width: 418px) {
+  .story-2 {
+    background-color: #A82225; } }
+
 .story-3 .story-text-3 {
   right: 25vw;
   bottom: 5vh; }
@@ -170,6 +174,10 @@ section {
   .story-4 .story-text-4 {
     bottom: none;
     right: 6.25vw; } }
+
+@media (max-width: 418px) {
+  .story-4 {
+    background-color: #39BCBB; } }
 
 .story-5 .story-text-5 {
   text-align: center;
