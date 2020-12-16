@@ -255,7 +255,7 @@ section {
     width: 80vw; } }
 
 .videoshow .video {
-  border-radius: 2em;
+  border-radius: 8px;
   position: relative; }
 
 .footer .footer-container {
