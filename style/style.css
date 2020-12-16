@@ -1,8 +1,25 @@
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../assets/JosefinSans-VariableFont_wght.ttf");
+  font-weight: normal;
+  font-style: regular; }
+
+/* TO DO: FLYTTES TIL EGEN SCSS FIL */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: normal; }
+
+button {
+  font: inherit;
+  border: 0;
+  text-align: left; }
+
+/** **/
 *, html {
   scroll-snap-type: Y mandatory; }
 
@@ -16,6 +33,13 @@ body {
   background-size: cover;
   font-family: "Josefin Sans";
   z-index: 10; }
+  @media (max-width: 418px) {
+    body body {
+      background-image: url("../img/mobil-bakgrunn.png");
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-position-y: top;
+      background-size: cover; } }
 
 h1 {
   font-size: 3.5em;
@@ -24,14 +48,31 @@ h1 {
   position: relative;
   left: 4.16667vw; }
 
+@media (max-width: 418px) {
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.2em;
+    width: 80vw;
+    left: none; } }
+
 h2 {
   font-size: 2.5em;
   color: #A82225;
   line-height: 1.2em; }
 
+@media (max-width: 418px) {
+  h2 {
+    font-size: 2em; } }
+
 h3 {
   font-size: 2em;
   color: #39BCBB; }
+
+@media (max-width: 418px) {
+  h3 {
+    font-size: 1.5em;
+    width: 80vw;
+    line-height: 1.2em; } }
 
 p {
   font-size: 2em;
@@ -41,12 +82,21 @@ p {
   text-align: left;
   position: relative; }
 
+@media (max-width: 418px) {
+  p {
+    font-size: 1.5em;
+    width: 70vw; } }
+
 a {
   font-size: 2.5em;
   text-decoration: none;
   color: #17171F;
   position: relative;
   z-index: 100; }
+
+@media (max-width: 418px) {
+  a {
+    font-size: 1.2em; } }
 
 span {
   color: #A82225; }
@@ -63,6 +113,10 @@ section {
   display: grid;
   place-items: center;
   scroll-snap-align: center; }
+
+@media (max-width: 418px) {
+  section {
+    scroll-snap-align: none; } }
 
 .intro .intro-container {
   position: relative;

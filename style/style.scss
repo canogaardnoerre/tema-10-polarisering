@@ -2,21 +2,60 @@ $background: #17171F;
 $elementcolor1: #39BCBB;
 $elementcolor2: #A82225;
 
+// Layout
+$sectionheight: 100vh;
+$sectionwidth: 100vw;
+$mobile-width: 80vw;
+$right-move: 25vw;
+$bottom-move: 10vh;
+$front: 100;
+$back: 10;
+
+$mobile: 418px;
+$desktop: 1024px;
+
 $font: 'Josefin Sans';
 $font-size: 1em;
+$paragraph-width: 35vw;
+$line-height: 1.2em;
+
+
+// Sjekk denne
+@font-face {
+	font-family: $font;
+	src: url('../assets/JosefinSans-VariableFont_wght.ttf');
+	font-weight: normal;
+    font-style: regular;
+}
+    
+
+/* TO DO: FLYTTES TIL EGEN SCSS FIL */
 
 * {
-    box-sizing: border-box;
-    margin: 0;
+	box-sizing: border-box;
+	margin: 0;
     padding: 0;
 }
+
+h1, h2, h3, h4, h5 {
+	font-size: inherit;
+	font-weight: normal;
+}
+
+button {
+	font: inherit;
+	border: 0;
+    text-align: left;
+}
+
+/** **/
 
 *, html {
     scroll-snap-type: Y mandatory;
 }
 
 body {
-    width: 100vw;
+    width: $sectionwidth;
     background-color: $background;
     background-image: url("../img/bakgrunn.png");
     background-repeat: no-repeat;
@@ -25,43 +64,93 @@ body {
     background-size: cover;
     font-family: $font;
     z-index: 10;
+
+    @media (max-width: $mobile) {
+        body {
+            background-image: url("../img/mobil-bakgrunn.png");
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: top;
+            background-size: cover;
+        }
+    }
+
 }
+
+
 
 // Text
 h1 {
-    font-size: 3.5em;
-    transform: translateX(0) rotate(-45deg);
-    color: $elementcolor1;
-    position: relative;
-    left: 4.16667vw;
+    font-size: $font-size * 3.5;
+	transform: translateX(0) rotate(-45deg);
+	color: $elementcolor1;
+	position: relative;
+	left: $right-move / 6;
 }
 
+@media (max-width: $mobile) {
+    h1 {
+        font-size: $font-size * 2.5;
+		line-height: $line-height;
+		width: $mobile-width;
+		left: none;
+    }
+}
+
+
 h2 {
-    font-size: 2.5em;
-    color: $elementcolor2;
-    line-height: 1.2em; 
+    font-size: $font-size * 2.5;
+	color: $elementcolor2;
+	line-height: $line-height;
+}
+
+@media (max-width: $mobile) {
+    h2 {
+		font-size: $font-size * 2;
+    }
 }
 
 h3 {
-    font-size: 2em;
-    color: $elementcolor1; 
+	font-size: $font-size * 2;
+	color: $elementcolor1;
+}
+
+@media (max-width: $mobile) {
+    h3 {
+        font-size: $font-size * 1.5;
+		width: $mobile-width;
+		line-height: $line-height;
+    }
 }
 
 p {
-    font-size: 2em;
-    width: 35vw;
-    line-height: 1.2em;
-    color: $elementcolor1;
-    text-align: left;
-    position: relative; 
+    font-size: $font-size * 2;
+	width: $paragraph-width;
+	line-height: $line-height;
+	color: $elementcolor1;
+	text-align: left;
+	position: relative;
+}
+
+@media (max-width: $mobile) {
+    p {
+        font-size: $font-size * 1.5;
+		width: $paragraph-width * 2;
+    }
 }
 
 a {
-    font-size: 2.5em;
-    text-decoration: none;
-    color: $background;
-    position: relative;
-    z-index: 100; 
+	font-size: $font-size * 2.5;
+	text-decoration: none;
+	color: $background;
+	position: relative;
+	z-index: $front;
+}
+
+@media (max-width: $mobile) { 
+    a {
+        font-size: $font-size * 1.2;   
+    }
 }
 
 span {
@@ -78,18 +167,25 @@ span {
 
 // Sections
 section {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    scroll-snap-align: center;
+    width: $sectionwidth;
+	height: $sectionheight;
+	display: grid;
+	place-items: center;
+	scroll-snap-align: center;
+}
+
+@media (max-width: $mobile) { 
+    section {
+        scroll-snap-align: none;
+    }
 }
 
 .intro {
     .intro-container {
         position: relative;
         bottom: -30vh;
-        right: 20.83333vw; }
+        right: 20.83333vw; 
+    }
     
 }
 
