@@ -1,2 +1,3 @@
-# tema-10-polarisering
- 
+# Tema 10: Polarisering
+
+Prosjekt @ Fagskolen Kristiania.
