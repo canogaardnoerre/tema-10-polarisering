@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+*, html {
+  scroll-snap-type: Y mandatory; }
+
+body {
+  width: 100vw;
+  background-color: #17171F;
+  background-image: url("../img/bakgrunn.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+  background-size: cover;
+  font-family: "Josefin Sans";
+  z-index: 10; }
+
+h1 {
+  font-size: 3.5em;
+  transform: translateX(0) rotate(-45deg);
+  color: #39BCBB;
+  position: relative;
+  left: 4.16667vw; }
+
+h2 {
+  font-size: 2.5em;
+  color: #A82225;
+  line-height: 1.2em; }
+
+h3 {
+  font-size: 2em;
+  color: #39BCBB; }
+
+p {
+  font-size: 2em;
+  width: 35vw;
+  line-height: 1.2em;
+  color: #39BCBB;
+  text-align: left;
+  position: relative; }
+
+a {
+  font-size: 2.5em;
+  text-decoration: none;
+  color: #17171F;
+  position: relative;
+  z-index: 100; }
+
+span {
+  color: #A82225; }
+
+.letter {
+  color: #39BCBB; }
+
+.letter-dark {
+  color: #17171F; }
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  scroll-snap-align: center; }
+
+.intro .intro-container {
+  position: relative;
+  bottom: -30vh;
+  right: 20.83333vw; }
+
+.story-1 .story-text-1 {
+  right: 25vw;
+  bottom: 5vh; }
+
+.story-2 .story-text-2 {
+  color: #17171F;
+  right: -25vw;
+  bottom: 5vh; }
+
+.story-3 .story-text-3 {
+  right: 25vw;
+  bottom: 5vh; }
+
+.story-4 .story-text-4 {
+  color: #17171F;
+  right: -25vw;
+  bottom: 5vh; }
+
+.story-5 .story-text-5 {
+  text-align: center;
+  bottom: 20vh;
+  width: 70vw; }
+
+.fish .fish-container {
+  height: 66.66667vh;
+  width: 100vw;
+  display: grid;
+  place-items: center; }
+
+.fish link {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 1em;
+  width: 35vw;
+  position: relative;
+  bottom: 36vh;
+  right: -5vw;
+  z-index: 100; }
+
+.fish .rethinking {
+  color: #39BCBB;
+  cursor: pointer; }
+
+.fish .hashtag {
+  bottom: 32vh;
+  right: 2.5vw;
+  font-size: 2em; }
+
+.fish .red {
+  z-index: 10;
+  width: 52.5vw;
+  transition: 0.2s all;
+  position: relative; }
+
+.fish .blue {
+  z-index: 10;
+  width: 35vw;
+  transition: 0.2s all;
+  position: relative; }
+
+.fish .red:hover, .fish .blue:hover {
+  transform: scale(1.1); }
+
+.fish .arrow {
+  width: 40px; }
+
+.rules .rules-container {
+  display: grid;
+  gap: 2em;
+  position: relative; }
+
+.videoshow .video {
+  border-radius: 2em;
+  position: relative; }
+
+.footer .footer-container {
+  display: grid;
+  grid-template-columns: auto;
+  place-content: center;
+  position: relative; }
+
+.footer .icons {
+  display: grid;
+  place-content: center;
+  grid-template-columns: auto auto auto;
+  gap: 1em;
+  padding-bottom: 6em; }
+
+.footer .so-me {
+  color: #39BCBB;
+  font-size: 2em; }
+
+.footer .footer-text, .footer .emails {
+  text-align: center;
+  font-size: 1.5em;
+  padding-bottom: 1em;
+  width: 70vw; }
+
+.footer .instagram {
+  width: 60px;
+  transition: 0.2s all;
+  cursor: pointer; }
+
+.footer .facebook {
+  width: 60px;
+  transition: 0.2s all;
+  cursor: pointer; }
+
+.footer .instagram:hover, .footer .facebook:hover {
+  transform: scale(1.1); }
+
+div .intro-gap {
+  height: 50vh;
+  width: 100vw; }
+
+div .hand-gap, div .mask-gap, div .gap-fish, div .gap-small, div .gap-small-2 {
+  height: 100vh;
+  width: 100vw; }
+
+div .code-gap {
+  height: 250vh;
+  width: 100vw; }
+
+div .hate-gap {
+  height: 0; }
+
+div .gap-small-2 {
+  background-color: #17171F; }
