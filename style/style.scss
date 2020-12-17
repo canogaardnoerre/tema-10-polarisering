@@ -159,18 +159,10 @@ a {
     }
 }
 
-span {
+.marked {
     color: $elementcolor2; 
 }
-
-.letter {
-    color: $elementcolor1; 
-}
-  
-  .letter-dark {
-    color: $background; 
-}
-
+ 
 // Sections
 section {
     width: $sectionwidth;
@@ -210,6 +202,9 @@ section {
         right: $right-move;
 	    bottom: $bottom-move / 2;
     }
+    .letter {
+        color: $elementcolor1; 
+    }
     @media (max-width: $mobile) { 
         .story-text-1 {
             bottom: none;
@@ -223,6 +218,9 @@ section {
         color: $background;
         right: - $right-move;
         bottom: $bottom-move / 2;
+    }
+    span {
+        color: $background;
     }
     @media (max-width: $mobile) { 
         .story-text-2 {
@@ -243,6 +241,9 @@ section {
         right: $right-move;
 	    bottom: $bottom-move / 2;
     }
+    .letter {
+        color: $elementcolor1; 
+    }
     @media (max-width: $mobile) { 
         .story-text-3 {
             bottom: none;
@@ -256,6 +257,9 @@ section {
         color: $background;
         right: - $right-move;
         bottom: $bottom-move / 2;
+    }
+    span {
+        color: $background;
     }
     @media (max-width: $mobile) { 
         .story-text-4 {
@@ -382,7 +386,13 @@ section {
 .videoshow {
     .video {
         border-radius: 8px;
-	    position: relative;
+        position: relative;
+    }
+    
+    @media (max-width: $mobile) {
+        .video {
+            width: 80vw;
+        }
     }
 }
 

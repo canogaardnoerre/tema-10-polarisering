@@ -31,14 +31,14 @@ function openInstagram() {
 }
 
 function addAnimation() {
-	let title1 = document.querySelector('.title2');
+	let title1 = document.querySelector('.some-tagline');
 	title1.innerHTML = title1.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 	anime.timeline({
 			loop: true
 		})
 		.add({
-			targets: '.title2 .letter',
+			targets: '.some-tagline .letter',
 			translateY: [100, 0],
 			translateZ: 0,
 			opacity: [0, 1],
@@ -46,7 +46,7 @@ function addAnimation() {
 			duration: 1400,
 			delay: (el, i) => 300 + 30 * i
 		}).add({
-			targets: '.title2 .letter',
+			targets: '.some-tagline .letter',
 			translateY: [0, -100],
 			opacity: [1, 0],
 			easing: "easeInExpo",
@@ -59,7 +59,7 @@ addAnimation(".title2")
 
 function addAnimation2() {
 
-	let text1 = document.querySelector('.section-set1');
+	let text1 = document.querySelector('.story-text-1');
 
 	text1.innerHTML = text1.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
@@ -67,7 +67,7 @@ function addAnimation2() {
 			loop: true
 		})
 		.add({
-			targets: '.section-set1 .letter',
+			targets: '.story-text-1 .letter',
 			translateY: [100, 0],
 			translateZ: 0,
 			opacity: [0, 1],
@@ -75,7 +75,7 @@ function addAnimation2() {
 			duration: 1400,
 			delay: (el, i) => 300 + 30 * i
 		}).add({
-			targets: '.section-set1 .letter',
+			targets: '.story-text-1 .letter',
 			translateY: [0, -100],
 			opacity: [1, 0],
 			easing: "easeInExpo",
@@ -88,7 +88,7 @@ addAnimation2()
 
 function addAnimation3() {
 
-	let text2 = document.querySelector('.section-set2');
+	let text2 = document.querySelector('.story-text-2');
 
 	text2.innerHTML = text2.textContent.replace(/\S/g, "<span class='letter2'>$&</span>");
 
@@ -96,7 +96,7 @@ function addAnimation3() {
 			loop: true
 		})
 		.add({
-			targets: '.section-set2 .letter',
+			targets: '.story-text-2 .letter2',
 			translateY: [100, 0],
 			translateZ: 0,
 			opacity: [0, 1],
@@ -104,7 +104,7 @@ function addAnimation3() {
 			duration: 1400,
 			delay: (el, i) => 300 + 30 * i
 		}).add({
-			targets: '.section-set2 .letter',
+			targets: '.story-text-2 .letter2',
 			translateY: [0, -100],
 			opacity: [1, 0],
 			easing: "easeInExpo",
@@ -117,7 +117,7 @@ addAnimation3()
 
 function addAnimation4() {
 
-	let text3 = document.querySelector('.section-set3');
+	let text3 = document.querySelector('.story-text-3');
 
 	text3.innerHTML = text3.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
@@ -125,7 +125,7 @@ function addAnimation4() {
 			loop: true
 		})
 		.add({
-			targets: '.section-set3 .letter',
+			targets: '.story-text-3 .letter',
 			translateY: [100, 0],
 			translateZ: 0,
 			opacity: [0, 1],
@@ -133,7 +133,7 @@ function addAnimation4() {
 			duration: 1400,
 			delay: (el, i) => 300 + 30 * i
 		}).add({
-			targets: '.section-set3 .letter',
+			targets: '.story-text-3 .letter',
 			translateY: [0, -100],
 			opacity: [1, 0],
 			easing: "easeInExpo",
@@ -146,7 +146,7 @@ addAnimation4()
 
 function addAnimation5() {
 
-	let text4 = document.querySelector('.section-set4');
+	let text4 = document.querySelector('.story-text-4');
 
 	text4.innerHTML = text4.textContent.replace(/\S/g, "<span class='letter2'>$&</span>");
 
@@ -154,7 +154,7 @@ function addAnimation5() {
 			loop: true
 		})
 		.add({
-			targets: '.section-set4 .letter',
+			targets: '.story-text-4 .letter2',
 			translateY: [100, 0],
 			translateZ: 0,
 			opacity: [0, 1],
@@ -162,7 +162,7 @@ function addAnimation5() {
 			duration: 1400,
 			delay: (el, i) => 300 + 30 * i
 		}).add({
-			targets: '.section-set4 .letter',
+			targets: '.story-text-4 .letter2',
 			translateY: [0, -100],
 			opacity: [1, 0],
 			easing: "easeInExpo",
@@ -175,7 +175,7 @@ addAnimation5()
 
 function addAnimation6() {
 
-	let text5 = document.querySelector('.section-set5');
+	let text5 = document.querySelector('.story-text-5');
 
 	text5.innerHTML = text5.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
@@ -183,7 +183,7 @@ function addAnimation6() {
 			loop: true
 		})
 		.add({
-			targets: '.section-set5 .letter',
+			targets: '.story-text-5 .letter',
 			translateY: [100, 0],
 			translateZ: 0,
 			opacity: [0, 1],
@@ -191,7 +191,7 @@ function addAnimation6() {
 			duration: 1400,
 			delay: (el, i) => 300 + 30 * i
 		}).add({
-			targets: '.section-set5 .letter',
+			targets: '.story-text-5 .letter',
 			translateY: [0, -100],
 			opacity: [1, 0],
 			easing: "easeInExpo",
