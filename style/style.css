@@ -99,14 +99,8 @@ a {
   a {
     font-size: 1.2em; } }
 
-span {
+.marked {
   color: #A82225; }
-
-.letter {
-  color: #39BCBB; }
-
-.letter-dark {
-  color: #17171F; }
 
 section {
   width: 100vw;
@@ -137,6 +131,9 @@ section {
   right: 25vw;
   bottom: 5vh; }
 
+.story-1 .letter {
+  color: #39BCBB; }
+
 @media (max-width: 418px) {
   .story-1 .story-text-1 {
     bottom: none;
@@ -146,6 +143,9 @@ section {
   color: #17171F;
   right: -25vw;
   bottom: 5vh; }
+
+.story-2 span {
+  color: #17171F; }
 
 @media (max-width: 418px) {
   .story-2 .story-text-2 {
@@ -160,6 +160,9 @@ section {
   right: 25vw;
   bottom: 5vh; }
 
+.story-3 .letter {
+  color: #39BCBB; }
+
 @media (max-width: 418px) {
   .story-3 .story-text-3 {
     bottom: none;
@@ -169,6 +172,9 @@ section {
   color: #17171F;
   right: -25vw;
   bottom: 5vh; }
+
+.story-4 span {
+  color: #17171F; }
 
 @media (max-width: 418px) {
   .story-4 .story-text-4 {
@@ -266,6 +272,10 @@ section {
   border-radius: 8px;
   position: relative; }
 
+@media (max-width: 418px) {
+  .videoshow .video {
+    width: 80vw; } }
+
 .footer .footer-container {
   display: grid;
   grid-template-columns: auto;
@@ -300,6 +310,12 @@ section {
 @media (max-width: 418px) {
   .footer .footer-text, .footer .emails {
     font-size: 1em; } }
+
+.footer .email-link {
+  cursor: pointer; }
+
+.footer .email-link:hover {
+  text-decoration: underline; }
 
 .footer .instagram {
   width: 60px;

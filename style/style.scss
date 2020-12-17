@@ -442,6 +442,14 @@ section {
         }
     }
 
+    .email-link {
+        cursor: pointer;
+    }
+
+    .email-link:hover {
+        text-decoration: underline;
+    }
+
     .instagram {
         width: 60px;
         transition: 0.2s all;

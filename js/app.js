@@ -27,7 +27,24 @@ function openInstagram() {
 		'event_label': "open-instagram",
 		'transport_type': 'beacon',
 	});
+}
 
+function emailAnna() {
+	window.open("mailto:annamariabukalska@gmail.com", '_self');
+	gtag('event', 'click', {
+		'event_category': 'outbound',
+		'event_label': "email-anna",
+		'transport_type': 'beacon',
+	});
+}
+
+function emailCamilla() {
+	window.open("mailto:camillanoerre@gmail.com", '_self');
+	gtag('event', 'click', {
+		'event_category': 'outbound',
+		'event_label': "email-camilla",
+		'transport_type': 'beacon',
+	});
 }
 
 function addAnimation() {
@@ -58,9 +75,7 @@ function addAnimation() {
 addAnimation(".title2")
 
 function addAnimation2() {
-
 	let text1 = document.querySelector('.story-text-1');
-
 	text1.innerHTML = text1.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 	anime.timeline({
@@ -87,9 +102,7 @@ function addAnimation2() {
 addAnimation2()
 
 function addAnimation3() {
-
 	let text2 = document.querySelector('.story-text-2');
-
 	text2.innerHTML = text2.textContent.replace(/\S/g, "<span style='color:#17171F'  class='letter2'>$&</span>");
 
 	anime.timeline({
@@ -116,9 +129,7 @@ function addAnimation3() {
 addAnimation3()
 
 function addAnimation4() {
-
 	let text3 = document.querySelector('.story-text-3');
-
 	text3.innerHTML = text3.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 	anime.timeline({
@@ -145,9 +156,7 @@ function addAnimation4() {
 addAnimation4()
 
 function addAnimation5() {
-
 	let text4 = document.querySelector('.story-text-4');
-
 	text4.innerHTML = text4.textContent.replace(/\S/g, "<span style='color:#17171F'  class='letter2'>$&</span>");
 
 	anime.timeline({
@@ -174,9 +183,7 @@ function addAnimation5() {
 addAnimation5()
 
 function addAnimation6() {
-
 	let text5 = document.querySelector('.story-text-5');
-
 	text5.innerHTML = text5.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 	anime.timeline({
@@ -200,17 +207,4 @@ function addAnimation6() {
 		});
 }
 
-addAnimation6()
-
-// const sec12 = document.querySelector("#1")
-// const sec12 = document.querySelector("#2")
-// const sec12 = document.querySelector("#3")
-// const sec12 = document.querySelector("#4")
-// const sec12 = document.querySelector("#5")
-// const sec12 = document.querySelector("#6")
-
-// function vis() {
-
-// }
-
-// sec12.onclick = vis
+addAnimation6();
