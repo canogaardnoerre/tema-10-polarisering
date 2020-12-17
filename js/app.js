@@ -90,7 +90,7 @@ function addAnimation3() {
 
 	let text2 = document.querySelector('.story-text-2');
 
-	text2.innerHTML = text2.textContent.replace(/\S/g, "<span class='letter2'>$&</span>");
+	text2.innerHTML = text2.textContent.replace(/\S/g, "<span style='color:#17171F'  class='letter2'>$&</span>");
 
 	anime.timeline({
 			loop: true
@@ -148,7 +148,7 @@ function addAnimation5() {
 
 	let text4 = document.querySelector('.story-text-4');
 
-	text4.innerHTML = text4.textContent.replace(/\S/g, "<span class='letter2'>$&</span>");
+	text4.innerHTML = text4.textContent.replace(/\S/g, "<span style='color:#17171F'  class='letter2'>$&</span>");
 
 	anime.timeline({
 			loop: true
